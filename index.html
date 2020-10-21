@@ -1,0 +1,46 @@
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css">
+<link type="text/css" rel="stylesheet" href="css/jquery.jgrowl.min.css">
+<link type="text/css" rel="stylesheet" href="css/jquery.dataTables.min.css">
+<link type="text/css" rel="stylesheet" href="css/main.css">
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.jgrowl.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <form class="address_form">
+    <input autocomplete="off" placeholder="Введите адрес IoT-устройства или введите \"TEST\" для симулирования логов" type="text" name="address" size="25" maxlength="128" class="address">
+	<input type="submit" name="connect" value="Подключиться" class="connect" id="connect">
+	</form>
+	<div id="root">
+    <table id="logs" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Событие</th>
+                <th>Важность</th>
+                <th>ID устройства</th>
+                <th>Время</th>
+				<th>Подробнее</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>ID</th>
+                <th>Событие</th>
+                <th>Важность</th>
+                <th>ID устройства</th>
+                <th>Время</th>
+				<th>Подробнее</th>
+            </tr>
+        </tfoot>
+    </table>
+	</div>
+	<div id="dialog" title="Подробнее"></div>
+</body>
+</html>
